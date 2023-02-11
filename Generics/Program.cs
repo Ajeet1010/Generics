@@ -7,14 +7,14 @@
             Console.WriteLine("-----  Generics Problems  -----");
             Console.WriteLine("Please enter three values to find maximum numbers");
             Console.Write("First no: ");
-            int firstValue = Convert.ToInt32(Console.ReadLine());
+            float firstValue  = float.Parse(Console.ReadLine());
             Console.Write("Second no: ");
-            int secondValue = Convert.ToInt32(Console.ReadLine());
+            float secondValue = float.Parse(Console.ReadLine());
             Console.Write("Third no: ");
-            int thirdValue = Convert.ToInt32(Console.ReadLine());
+            float thirdValue = float.Parse(Console.ReadLine());
             Maximum maximum = new Maximum();
-            int output = Maximum.IntegerNo(firstValue, secondValue, thirdValue);
-            Console.WriteLine("{0} is the maximum number\n at position no {1}", output, value);
+            float output = Maximum.FloatNo(firstValue, secondValue, thirdValue);
+            Console.WriteLine("{0} is the maximum number\n at position no {1}", output);
         }
     }
 }

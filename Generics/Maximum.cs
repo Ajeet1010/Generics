@@ -9,8 +9,8 @@ namespace Generics
 {
     public class Maximum
     {
-        // Method to find maximum integer number.
-        public static  int IntegerNo(int firstValue, int secondValue, int thirdValue)
+        // Method to find maximum float number.
+        public static  float FloatNo(float firstValue, float secondValue, float thirdValue)
         {            
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
                 return firstValue;
@@ -18,7 +18,6 @@ namespace Generics
                 return secondValue;
             else if (thirdValue.CompareTo(firstValue) > 0 && thirdValue.CompareTo(secondValue) > 0)
                 return thirdValue;
-            int Value = return;
             throw new Exception("firstValue ,SecondValue and thirdValue are same");
         }
     }
